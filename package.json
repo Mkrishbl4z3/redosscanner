@@ -1,0 +1,14 @@
+{
+  "name": "redosscanner",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A static analysis tool that detects catastrophic backtracking (ReDoS) vulnerabilities in regular expressions using automata theory.",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "test": "echo \"no tests yet\" && exit 0"
+  },
+  "license": "MIT"
+}
+
