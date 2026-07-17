@@ -1,0 +1,11 @@
+# Safe patterns
+a*
+a(b|c)*
+abc
+
+# Risky patterns
+(a|a)*
+
+# Dangerous patterns
+(a+)+
+(a*)*
