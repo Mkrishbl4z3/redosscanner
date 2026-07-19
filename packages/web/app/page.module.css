@@ -1,0 +1,193 @@
+/* app/page.module.css */
+
+.main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 96px 24px 64px;
+}
+
+.header {
+  margin-bottom: 56px;
+}
+
+.eyebrow {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.14em;
+  color: var(--color-safe);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-family: var(--font-mono);
+  font-size: 48px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-size: 17px;
+  line-height: 1.6;
+  color: var(--color-text-dim);
+  max-width: 560px;
+}
+
+.inputSection {
+  margin-bottom: 32px;
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  background: var(--color-bg-elevated);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+  padding: 4px 4px 4px 18px;
+  transition: border-color 0.15s ease;
+}
+
+.inputRow:focus-within {
+  border-color: var(--color-safe);
+}
+
+.slash {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-text-dim);
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: var(--font-mono);
+  font-size: 20px;
+  color: var(--color-text);
+  padding: 14px 4px;
+  min-width: 0;
+}
+
+.input::placeholder {
+  color: var(--color-border);
+}
+
+.analyzeButton {
+  font-family: var(--font-sans);
+  font-weight: 600;
+  font-size: 14px;
+  background: var(--color-safe);
+  color: var(--color-bg);
+  border: none;
+  border-radius: 6px;
+  padding: 14px 20px;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.analyzeButton:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.analyzeButton:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.examples {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.examplesLabel {
+  font-size: 13px;
+  color: var(--color-text-dim);
+}
+
+.exampleChip {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-text-dim);
+  border-radius: 5px;
+  padding: 6px 10px;
+  transition: all 0.15s ease;
+}
+
+.exampleChip:hover {
+  border-color: var(--color-safe);
+  color: var(--color-text);
+}
+
+.errorBox {
+  background: rgba(248, 113, 113, 0.1);
+  border: 1px solid var(--color-danger);
+  color: var(--color-danger);
+  border-radius: 8px;
+  padding: 16px;
+  font-family: var(--font-mono);
+  font-size: 14px;
+  margin-bottom: 24px;
+}
+
+.resultSection {
+  border-top: 1px solid var(--color-border);
+  padding-top: 32px;
+}
+
+.verdictBadge {
+  display: inline-block;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 0.05em;
+  color: var(--verdict-color);
+  border: 1px solid var(--verdict-color);
+  border-radius: 6px;
+  padding: 8px 16px;
+  margin-bottom: 24px;
+}
+
+.findingsList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.findingItem {
+  display: flex;
+  gap: 12px;
+  padding: 14px 16px;
+  background: var(--color-bg-elevated);
+  border-left: 3px solid var(--color-danger);
+  border-radius: 4px;
+}
+
+.findingType {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--color-text-dim);
+  white-space: nowrap;
+  padding-top: 2px;
+}
+
+.findingMessage {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text);
+}
+
+.safeMessage {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-dim);
+}

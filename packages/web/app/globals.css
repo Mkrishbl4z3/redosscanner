@@ -1,0 +1,64 @@
+/* app/globals.css */
+
+:root {
+  --color-bg: #0b1b33;
+  --color-bg-elevated: #0f2440;
+  --color-grid: #1e3a5f;
+  --color-text: #e8edf4;
+  --color-text-dim: #93a3bd;
+  --color-safe: #5eead4;
+  --color-warning: #fbbf24;
+  --color-danger: #f87171;
+  --color-border: #23406b;
+
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+body {
+  background-image:
+    linear-gradient(var(--color-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-grid) 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-attachment: fixed;
+  background-color: var(--color-bg);
+  opacity: 1;
+}
+
+::selection {
+  background: var(--color-safe);
+  color: var(--color-bg);
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
